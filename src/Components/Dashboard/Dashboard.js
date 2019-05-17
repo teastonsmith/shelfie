@@ -1,21 +1,32 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import Form from './../Form/Form';
 
 export default class Dashboard extends Component {
-  constructor(props){
-    super(props)
+	constructor(props) {
+		super(props);
 
-    this.state = {
+		this.state = {
+			products: [],
+			productImageUrl: '',
+			productName: '',
+			productPrice: 0,
+		};
+	}
 
-    }
-  }
-
-  render() {
-    return (
-      <div>
-        <p>Dashboard</p>
-      </div>
-    )
-  }
+	render() {
+		return (
+			<div>
+				<p>Dashboard</p>
+				<Form
+					products={this.state.products}
+					productImageUrl={this.state.products.productImageUrl}
+					productName={this.state.products.productName}
+					productPrice={this.state.products.productPrice}
+				/>
+			</div>
+		);
+	}
 }
 
 // A user should be able to add a name and a price for the product.
