@@ -5,16 +5,14 @@ export default class Form extends Component {
 	constructor(props) {
 		super(props);
 
-		// Each individual product should display its name, price and image.
 		this.state = {
-			// products: props.products,
-			// productImageUrl: props.products.productImageUrl,
-			// productName: props.products.productImageUrl,
-			// productPrice: props.products.productPrice,
+			products: props.products,
+			productImageUrl: props.products.productImageUrl,
+			productName: props.products.productImageUrl,
+			productPrice: props.products.productPrice,
 		};
 	}
 
-	// A user should be able to see all of the products that have been added to the inventory.
 	componentDidMount() {
 		axios
 			.get(`/api/products`)
@@ -90,5 +88,8 @@ export default class Form extends Component {
 		);
 	}
 }
+// A user should be able to see all of the products that have been added to the inventory.
+
+// Each individual product should display its name, price and image.
 
 // If there is no image URL, a default image should appear for the product.

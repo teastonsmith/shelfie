@@ -29,9 +29,9 @@ export default class Dashboard extends Component {
 	}
 }
 
-// A user should be able to add a name and a price for the product.
-
 // A user should be able to add an image URL for the product.
+
+// A user should be able to add a name and a price for the product.
 
 // There should be an image preview that displays the image added by the user.
 // If there is no image URL, a default image should appear in the preview.
